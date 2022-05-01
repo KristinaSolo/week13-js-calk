@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Калькулятор</title>
+</head>
+
+<body>
+    <article class="calc">
+        <output class="calc__result" id="result"></output>
+        <button type="button" class="calc__btn" onclick="handleNumberClick('7')">7</button>
+        <button type="button" class="calc__btn" onclick="handleNumberClick('8')">8</button>
+        <button type="button" class="calc__btn" onclick="handleNumberClick('9')">9</button>
+        <button type="button" class="calc__btn calc__btn-operator" onclick="handleOperationClick('+')">+</button>
+
+        <button type="button" class="calc__btn" onclick="handleNumberClick('4')">4</button>
+        <button type="button" class="calc__btn" onclick="handleNumberClick('5')">5</button>
+        <button type="button" class="calc__btn" onclick="handleNumberClick('6')">6</button>
+        <button type="button" class="calc__btn calc__btn-operator" onclick="handleOperationClick('-')">-</button>
+
+        <button type="button" class="calc__btn" onclick="handleNumberClick('1')">1</button>
+        <button type="button" class="calc__btn" onclick="handleNumberClick('2')">2</button>
+        <button type="button" class="calc__btn" onclick="handleNumberClick('3')">3</button>
+        <button type="button" class="calc__btn calc__btn-operator" onclick="handleOperationClick('*')">*</button>
+
+        <button type="button" class="calc__btn" onclick="handleNumberClick('0')">0</button>
+        <button type="button" class="calc__btn" onclick="handleNumberClick('.')">.</button>
+        <button type="button" class="calc__btn" onclick="handleNumberClick('00')">00</button>
+        <button type="button" class="calc__btn calc__btn-operator" onclick="handleOperationClick('/')">/</button>
+
+        <button type="button" class="calc__btn calc__btn-reset" onclick="handleReset()">C</button>
+        <button type="button" class="calc__btn calc__btn-equal" onclick="calculate()">=</button>
+    </article>
+    <script src="./style.js"></script>
+
+</body>
+
+</html>
